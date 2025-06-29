@@ -1,0 +1,335 @@
+Script started on 2025-06-29 17:35:51+02:00 [TERM="linux" TTY="/dev/pts/8" COLUMNS="89" LINES="59"]
+root@codeby-host:~# hostnamectl set-hostname codeby-host
+root@codeby-host:~# hostname
+codeby-host
+root@codeby-host:~# timedatectl set-timezone     
+.bash_history    .cache/          .ssh/            command-log.txt  typescript
+.bashrc          .profile         aux              ps-log.txt       
+root@codeby-host:~# timedatectl set-timezone Europe/Vienna
+root@codeby-host:~# timedatectl status
+               Local time: Sun 2025-06-29 17:36:44 CEST
+           Universal time: Sun 2025-06-29 15:36:44 UTC
+                 RTC time: n/a
+                Time zone: Europe/Vienna (CEST, +0200)
+System clock synchronized: yes
+              NTP service: inactive
+          RTC in local TZ: no
+root@codeby-host:~# cat /etc/motd 
+
+
+                        W E L C O M E
+root@codeby-host:~# uname -a
+Linux codeby-host 6.8.12-9-pve #1 SMP PREEMPT_DYNAMIC PMX 6.8.12-9 (2025-03-16T19:18Z) x86_64 x86_64 x86_64 GNU/Linux
+root@codeby-host:~# lsmod
+Module                  Size  Used by
+veth                   40960  0
+tcp_diag               12288  0
+inet_diag              28672  1 tcp_diag
+ebtable_filter         12288  0
+ebtables               45056  1 ebtable_filter
+ip_set                 61440  0
+ip6table_raw           12288  0
+iptable_raw            12288  0
+ip6table_filter        12288  0
+ip6_tables             32768  2 ip6table_filter,ip6table_raw
+iptable_filter         12288  0
+nf_tables             344064  0
+softdog                12288  2
+bonding               233472  0
+tls                   147456  1 bonding
+sunrpc                778240  1
+nfnetlink_log          24576  1
+binfmt_misc            24576  1
+nfnetlink              20480  5 nf_tables,ip_set,nfnetlink_log
+joydev                 28672  0
+input_leds             12288  0
+hid_generic            12288  0
+intel_rapl_msr         20480  0
+intel_rapl_common      36864  1 intel_rapl_msr
+usbkbd                 12288  0
+usbmouse               12288  0
+snd_acp_legacy_mach    24576  0
+snd_acp_mach           45056  1 snd_acp_legacy_mach
+snd_soc_nau8821        61440  1 snd_acp_mach
+usbhid                 69632  0
+iwlmvm                729088  0
+snd_soc_dmic           12288  1
+snd_acp3x_rn           12288  0
+snd_acp3x_pdm_dma      12288  1
+amdgpu              13291520  0
+edac_mce_amd           28672  0
+snd_sof_amd_acp63      16384  0
+snd_sof_amd_vangogh    16384  0
+snd_sof_amd_rembrandt    16384  0
+mac80211             1576960  1 iwlmvm
+snd_sof_amd_renoir     16384  0
+snd_sof_amd_acp        53248  4 snd_sof_amd_rembrandt,snd_sof_amd_vangogh,snd_sof_amd_acp63,snd_sof_amd_renoir
+kvm_amd               204800  0
+snd_sof_pci            24576  4 snd_sof_amd_rembrandt,snd_sof_amd_vangogh,snd_sof_amd_acp63,snd_sof_amd_renoir
+snd_hda_codec_realtek   192512  1
+snd_sof_xtensa_dsp     12288  1 snd_sof_amd_acp
+snd_sof               356352  2 snd_sof_amd_acp,snd_sof_pci
+libarc4                12288  1 mac80211
+snd_hda_codec_generic   102400  1 snd_hda_codec_realtek
+snd_sof_utils          16384  1 snd_sof
+kvm                  1339392  1 kvm_amd
+snd_soc_core          393216  7 snd_soc_nau8821,snd_acp_mach,snd_acp3x_rn,snd_sof,snd_acp_legacy_mach,snd_soc_dmic,snd_acp3x_pdm_dma
+snd_hda_codec_hdmi     90112  1
+btusb                  77824  0
+amdxcp                 12288  1 amdgpu
+snd_compress           28672  1 snd_soc_core
+btrtl                  32768  1 btusb
+irqbypass              12288  1 kvm
+drm_exec               12288  1 amdgpu
+ac97_bus               12288  1 snd_soc_core
+btintel                57344  1 btusb
+snd_pcm_dmaengine      16384  1 snd_soc_core
+crct10dif_pclmul       12288  1
+gpu_sched              61440  1 amdgpu
+snd_hda_intel          61440  0
+btbcm                  24576  1 btusb
+polyval_clmulni        12288  0
+drm_buddy              20480  1 amdgpu
+snd_pci_ps             24576  0
+snd_intel_dspcfg       36864  2 snd_hda_intel,snd_sof
+polyval_generic        12288  1 polyval_clmulni
+btmtk                  12288  1 btusb
+drm_suballoc_helper    12288  1 amdgpu
+snd_intel_sdw_acpi     16384  1 snd_intel_dspcfg
+snd_rpl_pci_acp6x      16384  0
+ghash_clmulni_intel    16384  0
+drm_ttm_helper         12288  1 amdgpu
+ttm                    98304  2 amdgpu,drm_ttm_helper
+snd_hda_codec         192512  4 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec_realtek
+sha256_ssse3           32768  0
+snd_acp_pci            12288  0
+snd_acp_legacy_common    16384  1 snd_acp_pci
+sha1_ssse3             32768  0
+bluetooth             995328  6 btrtl,btmtk,btintel,btbcm,btusb
+iwlwifi               548864  1 iwlmvm
+aesni_intel           356352  0
+drm_display_helper    225280  1 amdgpu
+snd_hda_core          131072  5 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek
+snd_pci_acp6x          16384  0
+snd_pci_acp5x          16384  0
+snd_hwdep              20480  1 snd_hda_codec
+crypto_simd            16384  1 aesni_intel
+snd_pcm               180224  16 snd_sof_amd_acp,snd_soc_nau8821,snd_hda_codec_hdmi,snd_pci_acp6x,snd_acp_mach,snd_hda_intel,snd_hda_codec,snd_sof,snd_compress,snd_acp_legacy_mach,snd_soc_core,snd_sof_utils,snd_hda_core,snd_acp3x_pdm_dma,snd_pci_ps,snd_pcm_dmaengine
+cec                    90112  1 drm_display_helper
+cryptd                 24576  2 crypto_simd,ghash_clmulni_intel
+ecdh_generic           16384  1 bluetooth
+snd_rn_pci_acp3x       16384  0
+snd_timer              49152  1 snd_pcm
+cfg80211             1269760  3 iwlmvm,iwlwifi,mac80211
+snd_acp_config         20480  9 snd_rn_pci_acp3x,snd_pci_acp6x,snd_pci_acp5x,snd_sof_amd_rembrandt,snd_sof_amd_vangogh,snd_sof_amd_acp63,snd_acp_pci,snd_pci_ps,snd_sof_amd_renoir
+ecc                    40960  1 ecdh_generic
+rc_core                73728  1 cec
+snd_soc_acpi           16384  2 snd_sof_amd_acp,snd_acp_config
+snd                   131072  13 snd_hda_codec_generic,snd_hda_codec_hdmi,snd_hwdep,snd_acp_mach,snd_hda_intel,snd_hda_codec,snd_hda_codec_realtek,snd_sof,snd_timer,snd_compress,snd_acp_legacy_mach,snd_soc_core,snd_pcm
+i2c_algo_bit           16384  1 amdgpu
+wmi_bmof               12288  0
+serio_raw              16384  0
+rapl                   20480  0
+soundcore              16384  1 snd
+snd_pci_acp3x          16384  0
+pcspkr                 12288  0
+k10temp                16384  0
+ccp                   135168  1 kvm_amd
+cm32181                12288  0
+industrialio          122880  1 cm32181
+mac_hid                12288  0
+zfs                  6168576  6
+spl                   143360  1 zfs
+vhost_net              32768  0
+vhost                  61440  1 vhost_net
+vhost_iotlb            16384  1 vhost
+tap                    28672  1 vhost_net
+efi_pstore             12288  0
+dmi_sysfs              20480  0
+ip_tables              32768  2 iptable_filter,iptable_raw
+x_tables               57344  7 ebtables,ip6table_filter,ip6table_raw,iptable_filter,ip6_tables,iptable_raw,ip_tables
+autofs4                57344  2
+btrfs                1912832  0
+blake2b_generic        24576  0
+xor                    20480  1 btrfs
+uas                    28672  0
+usb_storage            86016  1 uas
+raid6_pq              118784  1 btrfs
+dm_thin_pool           90112  3
+dm_persistent_data    110592  1 dm_thin_pool
+dm_bio_prison          24576  1 dm_thin_pool
+dm_bufio               53248  1 dm_persistent_data
+libcrc32c              12288  3 dm_persistent_data,btrfs,nf_tables
+xhci_pci               24576  0
+nvme                   61440  5
+xhci_pci_renesas       16384  1 xhci_pci
+crc32_pclmul           12288  0
+psmouse               204800  0
+nvme_core             204800  6 nvme
+xhci_hcd              364544  1 xhci_pci
+r8169                 110592  0
+i2c_piix4              28672  0
+nvme_auth              24576  1 nvme_core
+realtek                36864  1
+video                  77824  1 amdgpu
+wmi                    28672  2 video,wmi_bmof
+i2c_hid_acpi           12288  0
+i2c_hid                40960  1 i2c_hid_acpi
+hid                   163840  3 i2c_hid,usbhid,hid_generic
+root@codeby-host:~# lscpu
+Architecture:             x86_64
+  CPU op-mode(s):         32-bit, 64-bit
+  Address sizes:          48 bits physical, 48 bits virtual
+  Byte Order:             Little Endian
+CPU(s):                   16
+  On-line CPU(s) list:    0
+  Off-line CPU(s) list:   1-15
+Vendor ID:                AuthenticAMD
+  Model name:             AMD Ryzen 7 5825U with Radeon Graphics
+    CPU family:           25
+    Model:                80
+    Thread(s) per core:   2
+    Core(s) per socket:   8
+    Socket(s):            1
+    Stepping:             0
+    CPU(s) scaling MHz:   36%
+    CPU max MHz:          4546.0000
+    CPU min MHz:          400.0000
+    BogoMIPS:             3992.62
+    Flags:                fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov p
+                          at pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_op
+                          t pdpe1gb rdtscp lm constant_tsc rep_good nopl nonstop_tsc cpui
+                          d extd_apicid aperfmperf rapl pni pclmulqdq monitor ssse3 fma c
+                          x16 sse4_1 sse4_2 movbe popcnt aes xsave avx f16c rdrand lahf_l
+                          m cmp_legacy svm extapic cr8_legacy abm sse4a misalignsse 3dnow
+                          prefetch osvw ibs skinit wdt tce topoext perfctr_core perfctr_n
+                          b bpext perfctr_llc mwaitx cpb cat_l3 cdp_l3 hw_pstate ssbd mba
+                           ibrs ibpb stibp vmmcall fsgsbase bmi1 avx2 smep bmi2 erms invp
+                          cid cqm rdt_a rdseed adx smap clflushopt clwb sha_ni xsaveopt x
+                          savec xgetbv1 xsaves cqm_llc cqm_occup_llc cqm_mbm_total cqm_mb
+                          m_local user_shstk clzero irperf xsaveerptr rdpru wbnoinvd cppc
+                           arat npt lbrv svm_lock nrip_save tsc_scale vmcb_clean flushbya
+                          sid decodeassists pausefilter pfthreshold avic v_vmsave_vmload 
+                          vgif v_spec_ctrl umip pku ospke vaes vpclmulqdq rdpid overflow_
+                          recov succor smca fsrm debug_swap
+Virtualization features:  
+  Virtualization:         AMD-V
+Caches (sum of all):      
+  L1d:                    256 KiB (8 instances)
+  L1i:                    256 KiB (8 instances)
+  L2:                     4 MiB (8 instances)
+  L3:                     16 MiB (1 instance)
+NUMA:                     
+  NUMA node(s):           1
+  NUMA node0 CPU(s):      0-15
+Vulnerabilities:          
+  Gather data sampling:   Not affected
+  Itlb multihit:          Not affected
+  L1tf:                   Not affected
+  Mds:                    Not affected
+  Meltdown:               Not affected
+  Mmio stale data:        Not affected
+  Reg file data sampling: Not affected
+  Retbleed:               Not affected
+  Spec rstack overflow:   Mitigation; Safe RET
+  Spec store bypass:      Mitigation; Speculative Store Bypass disabled via prctl
+  Spectre v1:             Mitigation; usercopy/swapgs barriers and __user pointer sanitiz
+                          ation
+  Spectre v2:             Mitigation; Retpolines; IBPB conditional; IBRS_FW; STIBP always
+                          -on; RSB filling; PBRSB-eIBRS Not affected; BHI Not affected
+  Srbds:                  Not affected
+  Tsx async abort:        Not affected
+root@codeby-host:~# free -h
+               total        used        free      shared  buff/cache   available
+Mem:           512Mi        50Mi       200Mi       100Ki       261Mi       461Mi
+Swap:          512Mi          0B       512Mi
+root@codeby-host:~# cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:997:997:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:992:992:systemd Resolver:/:/usr/sbin/nologin
+sshd:x:103:65534::/run/sshd:/usr/sbin/nologin
+postfix:x:104:105::/var/spool/postfix:/usr/sbin/nologin
+uuidd:x:105:107::/run/uuidd:/usr/sbin/nologin
+tcpdump:x:106:109::/nonexistent:/usr/sbin/nologin
+root@codeby-host:~# cat /etc/group
+root:x:0:
+daemon:x:1:
+bin:x:2:
+sys:x:3:
+adm:x:4:syslog
+tty:x:5:
+disk:x:6:
+lp:x:7:
+mail:x:8:
+news:x:9:
+uucp:x:10:
+man:x:12:
+proxy:x:13:
+kmem:x:15:
+dialout:x:20:
+fax:x:21:
+voice:x:22:
+cdrom:x:24:
+floppy:x:25:
+tape:x:26:
+sudo:x:27:
+audio:x:29:
+dip:x:30:
+www-data:x:33:
+backup:x:34:
+operator:x:37:
+list:x:38:
+irc:x:39:
+src:x:40:
+shadow:x:42:
+utmp:x:43:
+video:x:44:
+sasl:x:45:
+plugdev:x:46:
+staff:x:50:
+games:x:60:
+users:x:100:
+nogroup:x:65534:
+systemd-journal:x:999:
+systemd-network:x:998:
+systemd-timesync:x:997:
+input:x:996:
+sgx:x:995:
+kvm:x:994:
+render:x:993:
+messagebus:x:101:
+syslog:x:102:
+ssl-cert:x:103:
+systemd-resolve:x:992:
+_ssh:x:104:
+postfix:x:105:
+postdrop:x:106:
+uuidd:x:107:
+crontab:x:991:
+rdma:x:108:
+tcpdump:x:109:
+root@codeby-host:~# exit
+exit
+
+Script done on 2025-06-29 17:37:38+02:00 [COMMAND_EXIT_CODE="0"]
