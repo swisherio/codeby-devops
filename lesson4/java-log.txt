@@ -1,0 +1,56 @@
+Script started on 2025-06-29 19:23:24+03:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="156" LINES="75"]
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hj[4mj[24m[4mj[24m[38;2;153;153;153mobs -1[39m[4mj[39m[4ma[24m[39m [39m [39m [39m [39m [4mj[4ma[4mv[24m[4mv[4ma[24m[24m[36mj[24m[36ma[24m[36mv[24m[36ma[39m[36ma[36m [39m[36ma[39m[39m -[32m-[39m[32m-[32mv[39m[32mv[32me[39m[32me[32mr[39m[32mr[32ms[39m[32ms[32mi[39m[32mi[32mo[39m[32mo[32mn[39m[?1l>[?2004l
+openjdk version "11.0.25-ea" 2024-10-15
+OpenJDK Runtime Environment (build 11.0.25-ea+5-post-Debian-1)
+OpenJDK 64-Bit Server VM (build 11.0.25-ea+5-post-Debian-1, mixed mode, sharing)
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hs[4ms[24m[4ms[24m[38;2;153;153;153mystemctl status ssh[39m[19D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20Du[4mu[24m[4mu[24m[38;2;153;153;153mfw status[39m[9D[4mu[39m[4mp[24m[39m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153mtime[39m[4mu[4mp[39m[4md[24m[39m [39m [39m [4md[4ma[24m[4ma[4mt[24m[4mt[4me[24m[4me[4m-[24m[4m-[4ma[24m[4ma[4ml[24m[9D[24m[36mu[24m[36mp[24m[36md[24m[36ma[24m[36mt[24m[36me[24m[36m-[24m[36ma[24m[36ml[36mternatives[39m[1m [0m[1m [1m-[0m[0m [0m[32m-[39m[32m-[32m-[39m[32m-[32mc[39m[32mc[32mo[39m[32mo[32mn[39m[32mn[32mf[39m[32mf[32mi[39m[32mi[32mg[39m[32mg[32m [39m[32mg[39m[39m j[1mj[0m[1mj[1ma[0m[1ma[1mv[0m[1mv[1ma[0m[?1l>[?2004l[0mj[0ma[0mv[0ma
+Есть 3 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      автоматический режим
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      ручной режим
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   1         ручной режим
+  3            /usr/lib/jvm/jdk-24.0.1-oracle-x64/bin/java   2         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: ^[[B^[[A        3
+update-alternatives: используется /usr/lib/jvm/jdk-24.0.1-oracle-x64/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hj[4mj[24m[4mj[24m[38;2;153;153;153mava -version[39m[12D[4mj[39m[4ma[24m[4mj[4ma[39m[4mv[24m[4mv[39m[4ma[24m[24m[36mj[24m[36ma[24m[36mv[24m[36ma[39m[36ma[36m [39m[36ma[39m[39m [39m-[32m-[39m[32m-[32mv[39m[32mv[32me[39m[32me[32mr[39m[32mr[32ms[39m[32ms[32mi[39m[32mi[32mo[39m[32mo[32mn[39m[?1l>[?2004l
+java version "24.0.1" 2025-04-15
+Java(TM) SE Runtime Environment (build 24.0.1+9-30)
+Java HotSpot(TM) 64-Bit Server VM (build 24.0.1+9-30, mixed mode, sharing)
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hjava -version[13D[36mj[36ma[36mv[36ma[39m [32m-[32mv[32me[32mr[32ms[32mi[32mo[32mn[39m[13D[36mu[36mp[36md[36ma[39mt[32me[32m-[32ma[32ml[32mt[32me[32mr[32mn[39matives --config java[30D[36ma[36mt[36me[36m-[36ma[36ml[36mt[36me[36mr[36mn[36ma[36mt[36mi[36mv[36me[36ms[39m [32m-[32m-[32mc[32mo[32mn[32mf[32mi[32mg[39m [1mj[1ma[1mv[1ma[0m[?1l>[?2004l[0mj[0ma[0mv[0ma
+Есть 3 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+  0            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      автоматический режим
+  1            /usr/lib/jvm/java-11-openjdk-amd64/bin/java   1111      ручной режим
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   1         ручной режим
+* 3            /usr/lib/jvm/jdk-24.0.1-oracle-x64/bin/java   2         ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 2
+update-alternatives: используется /usr/lib/jvm/java-21-openjdk-amd64/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hj[4mj[24m[4mj[24m[38;2;153;153;153mava -version[39m[12D[4mj[39m[4ma[24m[4mj[4ma[39m[4mv[24m[4mv[39m[4ma[24m[24m[36mj[24m[36ma[24m[36mv[24m[36ma[39m[36ma[36m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[39m[4mj[39m[4ma[39m[4mv[39m[4ma[39m[4m-[24m[4ma[24m[24m [24m[36mj[24m[36ma[24m[36mv[24m[36ma[39m[38;2;153;153;153m -version[39m[9D[36ma[36m [39m[36ma[39m[39m [39m-[32m-[39m[32m-[32mv[39m[32mv[32me[39m[32me[32mr[39m[39m-[39mv[39me[39mr
+Completing option
+[0m-verbose:class  -verbose  -- print class information                                                                                                      
+-verbose:gc               -- print gc information                                                                                                         
+-verbose:jni              -- print JNI information                                                                                                        
+[J-version        [J          [J-- print version                                                                                                                [J[5A[0m[27m[24m[0m[39m[4C[36mjava[39m -ver[38;2;153;153;153msion[39m[K[0m[39m[32m-[32mv[32me[32mr[39m[32mr[32ms[39m[32ms[32mi[39m[32mi[32mo[39m[32mo[32mn[39m[?1l>[?2004l
+[Jopenjdk version "21.0.7" 2025-04-15
+OpenJDK Runtime Environment (build 21.0.7+6-Debian-1)
+OpenJDK 64-Bit Server VM (build 21.0.7+6-Debian-1, mixed mode, sharing)
+                                                                                                                                                            ]0;root@griwa: /home/griwa/git/CodeBy-DevOps
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿griwa[0m[31m[34m)-[[1m[34m[39m/home/griwa/git/CodeBy-DevOps[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004he[4me[24m[4me[24m[38;2;153;153;153mxit[39m[4me[39m[4mx[24m[24m[36me[24m[36mx[39m[36me[36mx[36mi[39m[39m[4me[39m[4mx[39m[4mi[24m[4mi[39m[4mt[24m[24m[36me[24m[36mx[24m[36mi[24m[36mt[39m[?1l>[?2004l
+
+Script done on 2025-06-29 19:24:23+03:00 [COMMAND_EXIT_CODE="0"]

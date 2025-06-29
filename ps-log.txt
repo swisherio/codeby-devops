@@ -1,0 +1,70 @@
+Script started on 2025-06-29 17:37:43+02:00 [TERM="linux" TTY="/dev/pts/8" COLUMNS="89" LINES="59"]
+root@codeby-host:~# ps aux
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  2.2  21580 11904 ?        Ss   16:36   0:00 /sbin/init
+root          52  0.0  1.8  33948  9476 ?        Ss   16:36   0:00 /usr/lib/systemd/syste
+systemd+     126  0.0  1.6  18852  8576 ?        Ss   16:36   0:00 /usr/lib/systemd/syste
+systemd+     153  0.0  2.2  21452 11776 ?        Ss   16:36   0:00 /usr/lib/systemd/syste
+root         255  0.0  1.4  17512  7680 ?        Ss   16:36   0:00 /usr/lib/systemd/syste
+root         256  0.0  0.4   3808  2176 ?        Ss   16:36   0:00 /usr/sbin/cron -f -P
+message+     257  0.0  0.9   9632  4736 ?        Ss   16:36   0:00 @dbus-daemon --system 
+root         260  0.0  3.6  29396 19072 ?        Ss   16:36   0:00 /usr/bin/python3 /usr/
+root         271  0.0  1.5  12020  7936 ?        Ss   16:36   0:00 sshd: /usr/sbin/sshd -
+root         275  0.0  0.3   2732  1792 pts/0    Ss+  16:36   0:00 /sbin/agetty -o -p -- 
+root         277  0.0  0.3   2732  1792 pts/2    Ss+  16:36   0:00 /sbin/agetty -o -p -- 
+syslog       285  0.0  0.9 152872  4736 ?        Ssl  16:36   0:00 /usr/sbin/rsyslogd -n 
+root         543  0.0  0.9  42848  4772 ?        Ss   16:36   0:00 /usr/lib/postfix/sbin/
+postfix      544  0.0  1.4  43292  7680 ?        S    16:36   0:00 pickup -l -t unix -u -
+postfix      545  0.0  1.4  43332  7680 ?        S    16:36   0:00 qmgr -l -t unix -u
+root         795  0.0  0.8   6804  4608 pts/1    Ss   17:16   0:00 /bin/login -p --
+root         815  0.0  0.9   5516  4736 pts/1    S    17:16   0:00 -bash
+root         869  0.0  0.3   2716  1664 pts/1    S+   17:21   0:00 script ps-log.txt
+root         870  0.0  0.7   4588  3840 pts/3    Ss   17:21   0:00 bash -i
+root         877  0.0  0.3   2716  1792 pts/3    S+   17:22   0:00 script ps-log.txt
+root         878  0.0  0.7   4588  3968 pts/4    Ss   17:22   0:00 bash -i
+root         885  0.0  0.3   2716  1792 pts/4    S+   17:22   0:00 script
+root         886  0.0  0.7   4588  3840 pts/5    Ss   17:22   0:00 bash -i
+root         893  0.0  0.3   2716  1664 pts/5    S+   17:23   0:00 script ps-log.txt
+root         894  0.0  0.7   4688  3968 pts/6    Ss   17:23   0:00 bash -i
+root         918  0.0  0.3   2716  1792 pts/6    S+   17:25   0:00 script ps-log.txt
+root         919  0.0  0.7   4692  3968 pts/7    Ss   17:25   0:00 bash -i
+root        1087  0.0  0.3   2716  1664 pts/7    S+   17:34   0:00 script
+root        1088  0.0  0.7   4588  3840 pts/8    Ss   17:34   0:00 bash -i
+root        1136  0.0  0.3   2716  1664 pts/8    S+   17:37   0:00 script command-log-2.t
+root        1137  0.0  0.7   4588  3840 pts/9    Ss   17:37   0:00 bash -i
+root        1144  0.0  0.7   7892  3968 pts/9    R+   17:37   0:00 ps aux
+root@codeby-host:~# ps -u $USER
+    PID TTY          TIME CMD
+      1 ?        00:00:00 systemd
+     52 ?        00:00:00 systemd-journal
+    255 ?        00:00:00 systemd-logind
+    256 ?        00:00:00 cron
+    260 ?        00:00:00 networkd-dispat
+    271 ?        00:00:00 sshd
+    275 pts/0    00:00:00 agetty
+    277 pts/2    00:00:00 agetty
+    543 ?        00:00:00 master
+    795 pts/1    00:00:00 login
+    815 pts/1    00:00:00 bash
+    869 pts/1    00:00:00 script
+    870 pts/3    00:00:00 bash
+    877 pts/3    00:00:00 script
+    878 pts/4    00:00:00 bash
+    885 pts/4    00:00:00 script
+    886 pts/5    00:00:00 bash
+    893 pts/5    00:00:00 script
+    894 pts/6    00:00:00 bash
+    918 pts/6    00:00:00 script
+    919 pts/7    00:00:00 bash
+   1087 pts/7    00:00:00 script
+   1088 pts/8    00:00:00 bash
+   1136 pts/8    00:00:00 script
+   1137 pts/9    00:00:00 bash
+   1145 pts/9    00:00:00 ps
+root@codeby-host:~# top -b -d 1 > /dev/null &
+[1] 1146
+root@codeby-host:~# kill 1146
+root@codeby-host:~# exit
+exit
+
+Script done on 2025-06-29 17:38:50+02:00 [COMMAND_EXIT_CODE="0"]
